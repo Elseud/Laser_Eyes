@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <AbilityDef>
+        <defName>LaserEyes</defName>
+        <label>laser eyes</label>
+        <description>An unusual ability to adjust the arrangement of the lenses in the eyes to ultra-focus light to a single point forming a destructive laser beam.</description>
+        <iconPath>UI/Abilities/BlindingPulse</iconPath>
+        <cooldownTicksRange>3600</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <targetRequired>true</targetRequired>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <showCastingProgressBar>true</showCastingProgressBar>
+        <verbProperties>
+            <verbClass>UFO.CastBeam.Verb_AbilityCastBeam</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <warmupTime>1.0</warmupTime>
+            <range>24.9</range>
+            <minRange>3.9</minRange>
+            <beamFullWidthRange>6.9</beamFullWidthRange>
+            <burstShotCount>5</burstShotCount>
+            <beamWidth>6</beamWidth>
+            <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+            <beamDamageDef>Beam</beamDamageDef>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <soundCastBeam>BeamGraser_Shooting</soundCastBeam>
+            <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+            <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+            <beamMaxDeviation>1.5</beamMaxDeviation>
+            <beamCurvature>0.6</beamCurvature>
+            <beamMoteDef>Mote_GraserBeamBase</beamMoteDef>
+            <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+            <beamChanceToStartFire>0.85</beamChanceToStartFire>
+            <beamChanceToAttachFire>0.85</beamChanceToAttachFire>
+            <beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+            <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+            <beamStartOffset>0.8</beamStartOffset>
+            <beamLineFleckChanceCurve>
+                <points>
+                    <li>(0, 0)</li>
+                    <li>(0.65, 0.4)</li>
+                    <li>(1, 0.75)</li>
+                </points>
+            </beamLineFleckChanceCurve>
+        </verbProperties>
+    </AbilityDef>
+
+</Defs>
